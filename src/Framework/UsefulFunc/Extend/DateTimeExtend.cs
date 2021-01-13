@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Auggie.Lib.Extend
+namespace Auggie.Lib.DateTimeExtend
 {
     public static class DateTimeExtend
     {
