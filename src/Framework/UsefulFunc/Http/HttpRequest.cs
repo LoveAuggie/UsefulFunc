@@ -216,7 +216,7 @@ namespace Auggie.Lib.Http
 
         private byte[] GetRequestBytes(Dictionary<string, string> requestBodyDic)
         {
-            this.RequestBodyString = string.Join("&", requestBodyDic.Select(t => $"{t.Key}={System.Web.HttpUtility.UrlEncode(t.Value)}");
+            this.RequestBodyString = string.Join("&", requestBodyDic.Select(t => $"{t.Key}={System.Web.HttpUtility.UrlEncode(t.Value)}"));
 
             return this.Encoding.GetBytes(this.RequestBodyString);
         }
